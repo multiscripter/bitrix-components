@@ -1,0 +1,463 @@
+.steam-group-main,
+.steam-group-summary-body a,
+.steam-group-summary-body a:hover,
+.steam-group-summary-body a:focus,
+.steam-group-summary-body a:active,
+.steam-group-summary-body a:visited {
+    color: #fff;
+}
+.steam-group-main {
+    background: #1b2838;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
+}
+.steam-group-header,
+.steam-group-body,
+.steam-group-stats-list,
+.steam-group-counts,
+.steam-group-stats,
+.steam-group-refs,
+.steam-group-data-list,
+.steam-group-header-stats {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.steam-group-header {
+    align-items: flex-start;
+    background: url(images/steam-group-header-bg.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    margin-bottom: 5px;
+}
+.steam-group-logo-box {
+    padding: 5px 0 5px 5px;
+    width: 30%;
+}
+.steam-group-logo {
+    width: 100%;
+}
+.steam-group-header-data {
+    padding-top: 10px;
+}
+.steam-group-header-data-item {
+    display: block;
+}
+.steam-group-label {
+    background-color: #000;
+    background-color: rgba(0, 0, 0, 1);
+    font-size: 11px;
+    line-height: 23px;
+    padding: 0 11px;
+    text-transform: uppercase;
+}
+.steam-group-name {
+    background-color: #666;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 8px;
+    padding: 4px 0 4px 11px;
+}
+.steam-group-abbr {
+    color: #acacac;
+    font-size: 11px;
+}
+.steam-group-number {
+    display: block;
+}
+.steam-group-header-counts {
+    display: flex;
+    margin: 0 5px 0 11px;
+}
+.steam-group-numbers + .steam-group-numbers {
+    margin-left: 20px;
+}
+.steam-group-count-members {
+    display: inline-block;
+}
+.steam-group-count-ref,
+.steam-group-count-ref:hover,
+.steam-group-count-ref:focus,
+.steam-group-count-ref:active,
+.steam-group-count-ref:visited {
+    color: #9a9a9a;
+    cursor: pointer;
+    text-decoration: none;
+}
+.steam-group-count-ref:hover .steam-group-number-label,
+.steam-group-count-ref:focus .steam-group-number-label,
+.steam-group-count-ref:active .steam-group-number-label {
+    text-decoration: underline;
+}
+.steam-group-count-ingame {
+    color: #8bc53f;
+}
+.steam-group-count-online {
+    color: #62a7e3;
+    text-align: center;
+}
+.steam-group-number-num {
+    font-size: 26px;
+    line-height: 30px;
+}
+.steam-group-number-label {
+    font-size: 10px;
+    text-transform: uppercase;
+}
+.steam-group-header-stats,
+.steam-group-go2btn,
+.steam-group-data,
+.rel-game-data {
+    display: none;
+}
+.steam-group-body {
+    padding: 5px;
+}
+.steam-group-block-box {
+    background: rgb(27,40,56);
+    background: linear-gradient(180deg, rgba(29,44,60,1) 0%, rgba(31,51,68,1) 100%);
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+    padding: 16px 0 5px;
+    position: relative;
+}
+.steam-group-block-box:before,
+.steam-group-block-box:after {
+    content: '';
+    display: block;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.steam-group-block-box:before {
+    border-top: 1px solid #314967;
+    top: 0;
+}
+.steam-group-block-box:after {
+    border-bottom: 1px solid #314967;
+    bottom: 0;
+}
+.steam-group-block-box + .steam-group-block-box {
+    margin-top: 30px;
+}
+.steam-group-block-header {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+.steam-group-ext-ref,
+.steam-group-ext-ref:hover,
+.steam-group-ext-ref:focus,
+.steam-group-ext-ref:active,
+.steam-group-ext-ref:visited,
+.bb_link,
+.bb_link:hover,
+.bb_link:focus,
+.bb_link:active,
+.bb_link:visited {
+    color: #e1e1e1;
+}
+.steam-group-ext-ref,
+.bb_link:hover,
+.bb_link:focus,
+.bb_link:active {
+    text-decoration: none;
+}
+.steam-group-ext-ref:hover,
+.steam-group-ext-ref:focus,
+.steam-group-ext-ref:active {
+    text-decoration: underline;
+}
+.steam-group-ext-ref:after {
+    content: '';
+    background: url(images/ico-ext-ref.gif) no-repeat;
+    display: inline-block;
+    height: 8px;
+    margin: 7px 0 0 8px;
+    vertical-align: top;
+    width: 8px;
+}
+
+.bb_link_host {
+    margin-left: 5px;
+}
+
+.steam-group-body .steam-group-stat + .steam-group-stat {
+    border-top: 1px solid #000;
+}
+.steam-group-stat-ref-box {
+    display: block;
+}
+.steam-group-rss-item  + .steam-group-rss-item {
+    margin-top: 20px;
+}
+.steam-group-rss-item-ref,
+.steam-group-rss-item-ref:hover,
+.steam-group-rss-item-ref:focus,
+.steam-group-rss-item-ref:active,
+.steam-group-rss-item-ref:visited,
+.steam-group-rss-label {
+    color: #66C0F4;
+}
+.steam-group-rss-item-ref {
+    font-size: 24px;
+    text-decoration: none;
+}
+.steam-group-rss-item-ref:hover,
+.steam-group-rss-item-ref:focus,
+.steam-group-rss-item-ref:active,
+.steam-group-rss-label:hover,
+.steam-group-rss-label:focus,
+.steam-group-rss-label:active {
+    text-decoration: underline;
+}
+.steam-group-rss-item-data {
+    color: #61686d;
+    font-size: 13px;
+    margin-bottom: 14px;
+}
+.steam-group-rss-label {
+    cursor: pointer;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+.steam-group-rss-chbox,
+.steam-group-rss-item:nth-child(n+2),
+.steam-group-rss-chbox:checked  + div  label {
+    display: none;
+}
+.steam-group-rss-chbox:first-child  + div,
+.steam-group-rss-chbox:checked  + div + input + div,
+.steam-group-rss-chbox:checked  + div + div {
+    display: block;
+}
+@media (min-width: 576px) {
+    .steam-group-label {
+        display: inline-block;
+    }
+    .steam-group-name {
+        font-size: 25px;
+        padding-right: 11px;
+    }
+    .steam-group-abbr {
+        font-size: 20px;
+    }
+    .steam-group-header-stats {
+        color: #c1c1c1;
+        display: list-item;
+        font-size: 13px;
+        margin-left: 11px;
+    }
+    .steam-group-header-stats .steam-group-stat-label {
+        display: inline-block;
+        width: 70px;
+    }
+    .steam-group-block-box {
+        padding-left: 15px;
+    }
+}
+@media (min-width: 768px) {
+    .steam-group-name {
+        font-size: 30px;
+    }
+    .steam-group-abbr {
+        font-size: 24px;
+    }
+    .steam-group-header-counts {
+        margin-bottom: 10px;
+    }
+}
+@media (min-width: 1024px) {
+    .steam-group-header {
+        align-items: center;
+    }
+    .steam-group-logo-box {
+        width: 192px;
+    }
+    .steam-group-label {
+        color: #949491;
+    }
+    .steam-group-abbr {
+        font-size: 20px;
+    }
+    .steam-group-header-counts,
+    .steam-group-header-stats {
+        display: none;
+    }
+    .steam-group-number-num {
+        font-size: 22px;
+    }
+    .steam-group-go2btn {
+        background: #000;
+        display: list-item;
+        margin-left: auto;
+        padding: 6px;
+    }
+    .btn-go2,
+    .btn-go2:hover,
+    .btn-go2:focus,
+    .btn-go2:active,
+    .btn-go2:visited {
+        color: #D2E885;
+    }
+    .btn-go2 {
+        background: #a4d007;
+        background: -webkit-linear-gradient(top, #a4d007 5%, #536904 95%);
+        background: linear-gradient(to bottom, #a4d007 5%, #536904 95%);
+        border-radius: 2px;
+        display: inline-block;
+        padding: 1px;
+        text-decoration: none;
+    }
+    .btn-go2 > span {
+        border-radius: 2px;
+        background: #799905;
+        background: -webkit-linear-gradient(top, #799905 5%, #536904 95%);
+        background: linear-gradient(to bottom, #799905 5%, #536904 95%);
+        display: block;
+        font-size: 15px;
+        line-height: 30px;
+        padding: 0 15px;
+    }
+    .steam-group-body {
+        display: flex;
+    }
+    .steam-group-summary {
+        flex-grow: 1;
+    }
+    .steam-group-data {
+        display: list-item;
+        flex: 0 0 295px;
+        margin-left: 12px;
+    }
+    .steam-group-data-list {
+        background: #0b1017;
+    }
+    .steam-group-data-item {
+        border-bottom: 1px solid #1e323f;
+        border-top: 1px solid #000;
+        padding: 16px 14px;
+    }
+    steam-group-data-item:first-child {
+        border-top: none;
+    }
+    steam-group-data-item:last-child {
+        border-bottom: none;
+    }
+    .steam-group-body-count {
+        display: flex;
+        justify-content: space-around;
+    }
+    .steam-group-number-num,
+    .steam-group-number-label {
+        display: block;
+    }
+    .steam-group-number-num {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .steam-group-number-label {
+        font-size: 12px;
+    }
+    .steam-group-stats {
+        color: #61686d;
+        font-size: 12px;
+    }
+    .steam-group-stat-label {
+        display: inline-block;
+        width: 70px;
+    }
+    .steam-group-stat-flag {
+        margin-left: 5px;
+    }
+    .steam-group-ext-ref {
+        font-size: 14px;
+    }
+    .steam-group-ext-ref:hover,
+    .steam-group-ext-ref:focus,
+    .steam-group-ext-ref:active,
+    .bb_link:hover,
+    .bb_link:focus,
+    .bb_link:active    {
+        color: #66C0F4;
+        text-decoration: none;
+    }
+    .bb_link_host {
+        font-size: 12px;
+    }
+    .steam-group-summary-body {
+        color: #8F98A0;
+        font-size: 14px;
+    }
+    .steam-group-summary-body a,
+    .steam-group-summary-body a:visited {
+        color: #b0becb;
+    }
+    .steam-group-summary-body a:hover,
+    .steam-group-summary-body a:focus,
+    .steam-group-summary-body a:active {
+        color: #fff;
+    }
+    .steam-group-block-box {
+        padding-bottom: 15px;
+    }
+    .steam-group-block-header {
+        color: #61686d;
+        font-size: 11px;
+        margin-bottom: 25px;
+    }
+    .rel-game-data {
+        display: block;
+        margin-top: 23px;
+    }
+    .rel-game-label-box {
+        line-height: 11px;
+        padding: 11px 14px;
+    }
+    .rel-game-label {
+        color: #61696D;
+        font-size: 12px;
+    }
+    .rel-game-box {
+        align-items: center;    
+        background: #ddd;
+        background: rgba(84, 133, 183, 0.2);
+        display: flex;
+    }
+    .rel-game-pic-ref,
+    .rel-game-name-ref {
+        display: inline-block;
+    }
+    .rel-game-pic-ref {
+        border: 1px solid #555;
+    }
+    .rel-game-name-ref,
+    .rel-game-name-ref:hover,
+    .rel-game-name-ref:focus,
+    .rel-game-name-ref:active,
+    .rel-game-name-ref:visited {
+        color: #ebebeb;
+    }
+    .rel-game-name-ref:hover,
+    .rel-game-name-ref:focus,
+    .rel-game-name-ref:active {
+        text-decoration: underline;
+    }
+    .rel-game-name-ref {
+        cursor: pointer;
+        font-size: 14px;
+        line-height: 36px;
+        margin-left: 8px;
+        text-decoration: none;
+    }
+    .rel-game-label {
+        text-transform: uppercase;
+    }
+}
+@media (min-width: 1280px) {
+  
+}
+@media (min-width: 1536px) {
+  
+}
